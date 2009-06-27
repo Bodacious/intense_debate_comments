@@ -27,25 +27,27 @@ In your view, just add:
   <code><%= id_comments @post %></code>
 
 If, on your home-page, you want to show a short preview of each post and a comments-count displaying the number of comments on each, you can add:
-<code><%= id_comments_link post %></code>
+	<code><%= id_comments_link post %></code>
 	
 ## Extra Opts Example
 
 Here are some extra options you can specify:
+<pre>
 <code>
 	<%= id_comments @post, 
 						:acct_no => '... enter no here...', 
 						:url => post_url(post, :page_no => 1),
 						:title => "Title Of This Post" %>
 </code>
-
+</pre>
 and...
-`
+<pre>
+<code>
 <%- for post in @posts do -%>
 	<%= id_comments_link post, :acct_no => '... enter no here...', :url => post_url(post, :page_no => 1) %>
 <%- end -%>
-`
-
+</code>
+</pre>
 The *acct_no* option overrides the ID_ACCT_NO constant in application_controller.rb should you need to specify a different acct no.
 
 The *url* option is the url of the post or page. This is url Intense Debate will link to in rss feeds and on IntenseDebate.com. The default is the current page's url.
