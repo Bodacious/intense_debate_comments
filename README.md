@@ -21,13 +21,13 @@ You can set up an account for your own site free at [intenseDebate.com](http://i
 Suppose you want to add comments to the bottom of each post of your blog
 
 In *application_controller.rb* set the following:
-<code>ID_ACCT_NO = '... 32 digit code provided by IntenseDebate...'</code>
+  <code>ID_ACCT_NO = '... 32 digit code provided by IntenseDebate...'</code>
 
 In your view, just add:
-<code><%= id_comments @post %></code>
+  <code><%= id_comments @post %></code>
 
 If, on your home-page, you want to show a short preview of each post and a comments-count displaying the number of comments on each, you can add:
-<code><%= id_comments_link post %></code>
+  <code><%= id_comments_link post %></code>
 	
 ## Extra Opts Example
 
