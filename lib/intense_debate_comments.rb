@@ -1,5 +1,7 @@
 module IntenseDebateComments
   module ViewHelpers
+    
+    # call this method in your view to add comments to obj
     def id_comments(obj, options = {})
       options.symbolize_keys!
       options.assert_valid_keys(:acct_no, :url, :title)
@@ -20,6 +22,7 @@ module IntenseDebateComments
       nil
     end
 
+    # call this method in your view to add a comments counter and a link to obj
     def id_comments_link(obj, options = {})
       options.symbolize_keys!
       options.assert_valid_keys(:acct_no, :url)
@@ -38,13 +41,15 @@ module IntenseDebateComments
       nil
     end
     
-     def concat_line(string, unused_binding = nil)
-       output_buffer << string + "\n"
-     end
+    # adds a line-break to the end of each concatenated line
+    def concat_line(string, unused_binding = nil)
+      output_buffer << string + "\n"
+    end
     
     
     protected
     
+    # fectches the ID_ACCT_NO if not specified in options.
     def acct_no
       raise "Please set ID_ACCT_NO in ApplicationController." unless defined?(ApplicationController::ID_ACCT_NO)
       ApplicationController::ID_ACCT_NO
