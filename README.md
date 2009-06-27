@@ -40,11 +40,9 @@ Here are some extra options you can specify:
 </code>
 
 and...
-<code>
 <%- for post in @posts do -%>
 	<%= id_comments_link post, :acct_no => '... enter no here...', :url => post_url(post, :page_no => 1) %>
 <%- end -%>
-</code>
 
 The *acct_no* option overrides the ID_ACCT_NO constant in application_controller.rb should you need to specify a different acct no.
 
