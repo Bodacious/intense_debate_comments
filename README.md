@@ -1,20 +1,21 @@
-=IntenseDebateComments
+# IntenseDebateComments
+
 
 Add quick and easy comments to your app with IntenseDebate.
 
 If you haven't already heard of/seen IntenseDebate check out the comments on any of the tips at http://handyrailstips.com
 
-Benefits: 
+Benefits of using IntenseDebate: 
 	* Saves loads of time as you don't have to write your own system for accommodating comments
 	* Users can respond to individual comments so it feels more like a thread-based forum than simply consecutive comments
 	* Commenters can be notified of any extra comments being posted - great for brining traffic back to your site
 	* Built-in spam filter
 	* You can easily moderate comments
 	* Gravatar, OpenID and FacebookConnect are supported
-
+  * The form is fully customizable. Just upload your own custom stylesheet on the ID website
 You can set up an account for your own site free at http://intensedebate.com/
 
-==Simple Example
+## Simple Example
 
 Suppose you want to add comments to the bottom of each post of your blog
 
@@ -27,7 +28,7 @@ In your view, just add:
 If, on your home-page, you want to show a short preview of each post and a comments-count displaying the number of comments on each, you can add:
 <code><%= id_comments_link post %></code>
 	
-==Extra Opts Example
+## Extra Opts Example
 
 Here are some extra options you can specify:
 <code>
