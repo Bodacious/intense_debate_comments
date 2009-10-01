@@ -35,7 +35,7 @@ module IntenseDebateComments
       concat_line "<script type=\"text/javascript\">"
       concat_line "  var idcomments_acct = '#{ options[:acct_no] }';"
       concat_line "  var idcomments_post_id = '#{ obj.id }';"
-      concat_line "  var idcomments_post_url = '#{ options[:url] ? options[:url] : self.send( :"#{obj.class.to_s.underscore}_path", obj ) }';"
+      concat_line "  var idcomments_post_url = '#{ options[:url] ? options[:url] : self.send( :"#{obj.class.to_s.underscore}_url", obj ) }';"
       concat_line "</script>"
       concat_line "<script type=\"text/javascript\" src=\"http://www.intensedebate.com/js/genericLinkWrapperV2.js\"></script>"
       nil
