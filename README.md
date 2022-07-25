@@ -1,3 +1,5 @@
+_NOTE: This Rails 2 plugin is no longer maintained_
+
 # IntenseDebateComments
 
 
