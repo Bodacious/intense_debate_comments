@@ -52,6 +52,5 @@ The *title* option is the title of the post or page. This is the title that will
 
 Still trying working on improving this plugin with the guys from IntenseDebate.
 
-Any feedback welcome: dr_gavin@hotmail.com
 
 Copyright (c) 2009 Gavin Morrice, released under the MIT license
